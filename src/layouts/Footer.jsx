@@ -25,8 +25,8 @@ const Footer = () => (
   <Wrapper>
     <Text>
       <span>
-        <a href="https://impressionistArts.com" target="_blank" style={{color: "white"}}>ImpressionistArts.com</a> - {' '}
-        <a href="https://justinformentin.com" style={{color: "white"}}>Lars Behrenberg</a>
+        <a href="https://impressionistArts.com" target="_blank" rel="noopener" style={{color: "white", textDecoration: "underline"}}>ImpressionistArts.com</a> - {' '}
+        Copy by <a href="https://larsbehrenberg.com" style={{color: "white", fontWeight: "bold"}}>Lars Behrenberg</a>
       </span>
     </Text>
   </Wrapper>

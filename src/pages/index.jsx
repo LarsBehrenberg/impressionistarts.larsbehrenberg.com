@@ -25,7 +25,7 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <Helmet title={'Home Page'} />
-      <Header title="Home Page">This is a copy <a href="https://impressionistarts.com" target="_blank" rel="noopener" style={{color: "white", textDecoration: "underline"}}>ImpressionistArts.com</a> solely for testing purposes.</Header>
+      <Header title="Home Page">This is a copy of <a href="https://impressionistarts.com" target="_blank" rel="noopener" style={{color: "white", textDecoration: "underline"}}>ImpressionistArts.com</a> solely for testing purposes.</Header>
       <PostWrapper>
         {edges.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;

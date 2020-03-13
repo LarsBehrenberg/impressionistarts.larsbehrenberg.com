@@ -10,7 +10,7 @@ const Blog = ({ data }) => {
   return (
     <Layout>
       <Helmet title={'Blog Page'} />
-      <Header title="Blog Page">ImpressionistArts.com</Header>
+      <Header title="Blog Page">This is a copy <a href="https://impressionistarts.com" target="_blank" rel="noopener" style={{color: "white", textDecoration: "underline"}}>ImpressionistArts.com</a> solely for testing purposes.</Header>
       {edges.map(({ node }) => (
         <BlogList
           key={node.id}

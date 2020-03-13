@@ -7,7 +7,7 @@ import { Layout, Container } from 'layouts';
 const About = center => (
   <Layout>
     <Helmet title={'About Page'} />
-    <Header title="About Page">ImpressionistArts.com</Header>
+    <Header title="About Page">This is a copy <a href="https://impressionistarts.com" target="_blank" rel="noopener" style={{color: "white", textDecoration: "underline"}}>ImpressionistArts.com</a> solely for testing purposes.</Header>
     <Container center={center}>
       <h3>
         This is a blog site about the Impressionist artist.

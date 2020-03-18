@@ -8,7 +8,7 @@ tags:
   - impressionist
   - Berthe Morisot
 ---
-**In many ways, Berthe Morisot captured the essence of Impressionism.**
+**This is a test in many ways, Berthe Morisot captured the essence of Impressionism.**
 
 Critics, including Paul Mantz and Theodore Duret, described her as a ‘quintessential Impressionist’. This is evident in the way her works manipulate light and colour, exuding life and a sense of fleeting emotion.
 

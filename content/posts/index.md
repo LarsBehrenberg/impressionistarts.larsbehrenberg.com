@@ -2,7 +2,7 @@
 path: /berthe-morisot
 date: '2020-03-08'
 title: Berthe Morisot
-cover: ./berthe-morisot-eugene-manet.jpg
+cover: /content/degas-cotton-exchange-new-orleans-lg.jpg
 published: true
 tags:
   - impressionist

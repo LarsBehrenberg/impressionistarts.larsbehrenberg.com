@@ -2,7 +2,7 @@
 path: /berthe-morisot
 date: '2020-03-08'
 title: Berthe Morisot
-cover: degas-cotton-exchange-new-orleans-lg.jpg
+cover: /content/posts/degas-cotton-exchange-new-orleans-lg.jpg
 published: true
 tags:
   - impressionist

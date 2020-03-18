@@ -9,17 +9,17 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
     {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'posts',
-        path: `${__dirname}/content/posts`,
-      },
+      resolve: `gatsby-source-filesystem`,
+          options: {
+              name: 'images',
+              path: `${__dirname}/static/assets`,
+          },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'images',
-        path: `${__dirname}/static/assets`,
+        name: 'posts',
+        path: `${__dirname}/content/posts`,
       },
     },
     'gatsby-transformer-sharp',
@@ -27,7 +27,9 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          'gatsby-remark-relative-images',
+          {
+            resolve: `gatsby-remark-relative-images`,
+          },
           {
             resolve: 'gatsby-remark-images',
             options: {

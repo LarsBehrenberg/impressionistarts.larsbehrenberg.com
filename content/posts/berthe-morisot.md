@@ -2,7 +2,7 @@
 path: /berthe-morisot
 date: '2020-03-08'
 title: Berthe Morisot
-cover: /assets/manet-bar-at-folies-bergere.jpg
+cover: /assets/berthe-morisot-eugene-manet.jpg
 published: true
 tags:
   - impressionist

@@ -3,7 +3,7 @@ backend:
   repo: larsbehrenberg/impressionistarts.larsbehrenberg.com
 
 media_folder: /content/posts
-public_folder: /content
+public_folder: /content/posts
 
 collections:
   - name: "posts"

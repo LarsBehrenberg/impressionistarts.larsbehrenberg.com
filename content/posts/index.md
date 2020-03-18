@@ -1,10 +1,12 @@
 ---
-path: "/berthe-morisot"
-cover: "./berthe-morisot-eugene-manet.jpg"
-date: "2020-03-08"
-title: "Berthe Morisot"
+path: /berthe-morisot
+date: '2020-03-08'
+title: Berthe Morisot
+cover: /assets/degas-cotton-exchange-new-orleans-lg.jpg
 published: true
-tags: ['impressionist', 'Berthe Morisot']
+tags:
+  - impressionist
+  - Berthe Morisot
 ---
 **In many ways, Berthe Morisot captured the essence of Impressionism.**
 

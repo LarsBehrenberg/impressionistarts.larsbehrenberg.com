@@ -76,7 +76,7 @@ export const query = graphql`
     markdownRemark(frontmatter: { path: { eq: $pathSlug } }) {
       html
       frontmatter {
-        date
+        date(formatString: "MM.DD.YYYY")
         title
         tags
         cover {

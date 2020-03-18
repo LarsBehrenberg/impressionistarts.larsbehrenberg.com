@@ -2,8 +2,8 @@ backend:
   name: github
   repo: larsbehrenberg/impressionistarts.larsbehrenberg.com
 
-media_folder: /content/posts/
-public_folder: /content/posts/
+media_folder: /static/assets/
+public_folder: /assets/
 
 collections:
   - name: "posts"

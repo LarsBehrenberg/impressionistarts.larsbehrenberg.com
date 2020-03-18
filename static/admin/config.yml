@@ -2,13 +2,13 @@ backend:
   name: github
   repo: larsbehrenberg/impressionistarts.larsbehrenberg.com
 
-media_folder: /content/posts
-public_folder: /content/posts
+media_folder: /content/posts/
+public_folder: /content/
 
 collections:
   - name: "posts"
     label: "Posts"
-    folder: "/content/posts"
+    folder: "/content/posts/"
     create: true
     fields:
       - { name: "path", label: "Path" }

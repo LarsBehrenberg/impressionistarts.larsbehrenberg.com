@@ -61,3 +61,6 @@ typings/
 public
 yarn-error.log
 .tern-port
+
+# Mac online
+.DS_Store

@@ -1,15 +1,15 @@
 backend:
   name: github
-  branch: master
   repo: larsbehrenberg/impressionistarts.larsbehrenberg.com
+
 media_folder: static/assets
 public_folder: /assets
+
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
+  - name: "posts"
+    label: "Posts"
+    folder: "/content/posts"
     create: true
-    published: true
     fields:
       - { name: "path", label: "Path" }
       - { name: "date", label: "Date", widget: "datetime" }

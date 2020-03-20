@@ -17,11 +17,30 @@ collections:
       - { name: "body", label: "Body", widget: "markdown" }
       - { name: "tags", label: "Tags", widget: "list" }
       - { name: "cover", label: "Featured Image", widget: "image", required: true }
-      - label: "Author List"
-        name: "authorList"
+      - label: "Text sections"
+        name: "textSections"
         widget: "list"
         allow_add: true
         collapsed: false
         fields:
-          - {label: Author, name: author, widget: string }
-          - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
+          - {label: Text Title, name: textTitle, widget: string, default: "This is the text title!"}
+          - {label: Text, name: text, widget: string, default: "This is the body text!"}
+          - label: "Gallery"
+            name: "galleryImages"
+            widget: "list"
+            collapsed: false
+            allow_add: false
+            fields:
+            - {label: Image, name: image, widget: image}
+            - {label: Image, name: image, widget: image}
+            - {label: Image, name: image, widget: image}
+  
+  - name: "maps"
+    label: "Maps"
+    folder: "/content/maps/"
+    create: true
+    fields:
+      - { name: "path", label: "Path" }
+      - { name: "title", label: "Title" }
+      - { name: "googleApi", label: "Google API URL"}
+      - { name: "tags", label: "Tags", widget: "list" }

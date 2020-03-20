@@ -11,8 +11,8 @@ collections:
     folder: "/content/posts/"
     create: true
     fields:
-      - { name: "path", label: "Path" }
-      - { name: "date", label: "Date", widget: "datetime" }
+      - { name: "path", label: "Slug" }
+      - { name: "date", label: "Published Date", widget: "datetime" }
       - { name: "title", label: "Title" }
       - { name: "body", label: "Body", widget: "markdown" }
       - { name: "tags", label: "Tags", widget: "list" }
@@ -30,10 +30,7 @@ collections:
             widget: "list"
             collapsed: false
             allow_add: false
-            fields:
-            - {label: Image, name: image, widget: image}
-            - {label: Image, name: image, widget: image}
-            - {label: Image, name: image, widget: image}
+            field: {label: Image 1, name: image1, widget: image}
   
   - name: "maps"
     label: "Maps"

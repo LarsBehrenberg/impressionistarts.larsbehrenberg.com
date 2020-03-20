@@ -20,7 +20,7 @@ collections:
       - label: "Author List"
         name: "authorList"
         widget: "list"
-        allow_add: false
+        allow_add: true
         collapsed: false
         fields:
           - {label: Author, name: author, widget: string }

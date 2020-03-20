@@ -28,9 +28,7 @@ collections:
           - label: "Gallery"
             name: "galleryImages"
             widget: "list"
-            collapsed: false
-            allow_add: false
-            field: {label: Image 1, name: image1, widget: image}
+            field: {label: Image, name: image, widget: image}
   
   - name: "maps"
     label: "Maps"

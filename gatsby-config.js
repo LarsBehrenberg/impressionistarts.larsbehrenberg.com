@@ -11,7 +11,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-netlify-identity`,
       options: {
-        url: `impressionistarts.larsbehrenberg.com/` // required!
+        url: `https://impressionistarts.larsbehrenberg.com/` // required!
       }
     },
     {

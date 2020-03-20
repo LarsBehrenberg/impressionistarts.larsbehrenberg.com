@@ -16,4 +16,12 @@ collections:
       - { name: "title", label: "Title" }
       - { name: "body", label: "Body", widget: "markdown" }
       - { name: "tags", label: "Tags", widget: "list" }
-      - { name: "cover", label: "Featured Image", widget: "image", required: true}
+      - { name: "cover", label: "Featured Image", widget: "image", required: true }
+      - label: "Author List"
+        name: "authorList"
+        widget: "list"
+        allow_add: false
+        collapsed: false
+        fields:
+          - {label: Author, name: author, widget: string }
+          - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}

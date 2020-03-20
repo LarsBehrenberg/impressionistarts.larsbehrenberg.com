@@ -8,7 +8,12 @@ module.exports = {
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
-    'gatsby-plugin-netlify-identity-widget',
+    {
+      resolve: `gatsby-plugin-netlify-identity`,
+      options: {
+        url: `impressionistarts.larsbehrenberg.com/` // required!
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
           options: {

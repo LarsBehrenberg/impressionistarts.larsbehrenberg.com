@@ -9,6 +9,8 @@ cover: /assets/manet-bar-at-folies-bergere.jpg
 authorList:
   - quote: Everything is awesome!
     author: Some author
+  - quote: Everything is even more awesome!
+    author: Another author
 ---
 **Edouard Manet was born in 1832, the first child of Auguste and Eugenie.**
 

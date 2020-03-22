@@ -9,12 +9,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
     {
-      resolve: `gatsby-plugin-netlify-identity`,
-      options: {
-        url: `https://impressionistarts.larsbehrenberg.com/` // required!
-      }
-    },
-    {
       resolve: `gatsby-source-filesystem`,
           options: {
               name: 'images',

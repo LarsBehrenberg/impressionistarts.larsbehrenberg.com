@@ -37,8 +37,10 @@ const Post = ({ data, pageContext }) => {
       <Header title={title} date={date} cover={image} />
       <Container>
         <Content input={html} />
+        <Content input={frontmatter.textSections.text} />
         <TagsBlock list={tags || []} />
       </Container>
+
       <SuggestionBar>
         <PostSuggestion>
           {prev && (
@@ -79,6 +81,15 @@ export const query = graphql`
         date(formatString: "MM.DD.YYYY")
         title
         tags
+        textSections {
+          text
+          textTitle
+          galleryImages {
+            image3
+            image2
+            image1
+          }
+        }
         cover {
           childImageSharp {
             fluid(

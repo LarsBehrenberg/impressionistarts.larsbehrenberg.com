@@ -37,7 +37,6 @@ const Post = ({ data, pageContext }) => {
       <Header title={title} date={date} cover={image} />
       <Container>
         <Content input={html} />
-        <Content input={frontmatter.textSections.text} />
         <TagsBlock list={tags || []} />
       </Container>
 
@@ -85,9 +84,48 @@ export const query = graphql`
           text
           textTitle
           galleryImages {
-            image3
-            image2
-            image1
+            image3 {
+              childImageSharp {
+                fluid(
+                  maxWidth: 1920
+                  quality: 90
+                  duotone: { highlight: "#386eee", shadow: "#d3d3d3", opacity: 30 }
+                ) {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+                resize(width: 1200, quality: 90) {
+                  src
+                }
+              }
+            }
+            image2 {
+              childImageSharp {
+                fluid(
+                  maxWidth: 1920
+                  quality: 90
+                  duotone: { highlight: "#386eee", shadow: "#d3d3d3", opacity: 30 }
+                ) {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+                resize(width: 1200, quality: 90) {
+                  src
+                }
+              }
+            }
+            image1 {
+              childImageSharp {
+                fluid(
+                  maxWidth: 1920
+                  quality: 90
+                  duotone: { highlight: "#386eee", shadow: "#d3d3d3", opacity: 30 }
+                ) {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+                resize(width: 1200, quality: 90) {
+                  src
+                }
+              }
+            }
           }
         }
         cover {

@@ -1,9 +1,9 @@
 const path = require('path');
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
+
+const remark = require('remark')
+const remarkHTML = require('remark-html')
  
-exports.onCreateNode = ({ node }) => {
-  fmImagesToRelative(node);
-};
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -105,4 +105,31 @@ exports.onCreateWebpackConfig = ({ actions }) => {
       modules: [path.resolve(__dirname, 'src'), 'node_modules'],
     },
   });
+};
+
+
+exports.onCreateNode = ({ node, actions: { createNodeField } }) => {
+  fmImagesToRelative(node);
+
+  const textSections = node.frontmatter.textSections;
+
+  if (textSections) {
+    const value = textSections.map(event =>
+        remark()
+        .use(remarkHTML)
+        .processSync(event.text)
+        .toString()
+      )
+
+    // new node at:
+    // fields {
+    //   textSections_html
+    // }  
+    createNodeField({
+      name: `textSections`,
+      node,
+      value
+    });
+  }
+
 };

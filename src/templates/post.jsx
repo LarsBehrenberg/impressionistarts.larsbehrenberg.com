@@ -37,7 +37,10 @@ const Post = ({ data, pageContext }) => {
       <Header title={title} date={date} cover={image} />
       <Container>
         <Content input={html} />
-        <Content input={fields.textSections} />
+        {fields.bodyTitle.map((value, index) => {
+          const totalText = fields.bodyTitle[index] + fields.bodyText[index];
+          return <Content input={totalText} />
+        })}
         <TagsBlock list={tags || []} />
       </Container>
 
@@ -78,15 +81,14 @@ export const query = graphql`
     markdownRemark(frontmatter: { path: { eq: $pathSlug } }) {
       html
       fields {
-        textSections
+        bodyTitle
+        bodyText
       }
       frontmatter {
         date(formatString: "MM.DD.YYYY")
         title
         tags
         textSections {
-          text
-          textTitle
           galleryImages {
             image3 {
               childImageSharp {

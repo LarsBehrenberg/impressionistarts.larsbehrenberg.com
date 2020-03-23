@@ -8,6 +8,7 @@ module.exports = {
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
+    'gatsby-plugin-netlify-identity-widget',
     {
       resolve: `gatsby-source-filesystem`,
           options: {

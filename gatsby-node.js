@@ -5,8 +5,7 @@ const remark = require('remark')
 const remarkHTML = require('remark-html')
  
 
-exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions;
+exports.createPages = ({ graphql, actions: { createPage } }) => {
 
   return new Promise((resolve, reject) => {
     const postTemplate = path.resolve('src/templates/post.jsx');
@@ -111,25 +110,37 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 exports.onCreateNode = ({ node, actions: { createNodeField } }) => {
   fmImagesToRelative(node);
 
-  const textSections = node.frontmatter.textSections;
+  if(node.frontmatter){
+    const textSections = node.frontmatter.textSections;
 
-  if (textSections) {
-    const value = textSections.map(event =>
-        remark()
-        .use(remarkHTML)
-        .processSync(event.text)
-        .toString()
-      )
+    if (textSections) {
 
-    // new node at:
-    // fields {
-    //   textSections_html
-    // }  
-    createNodeField({
-      name: `textSections`,
-      node,
-      value
-    });
+      const bodyText = textSections.map(event =>
+          remark()
+          .use(remarkHTML)
+          .processSync(event.text)
+          .toString()
+        )
+      const bodyTitle = textSections.map(event => 
+          remark()
+          .use(remarkHTML)
+          .processSync(event.textTitle)
+          .toString()
+        )
+
+      createNodeField({
+        name: `bodyText`,
+        node,
+        value: bodyText
+      });
+
+      createNodeField({
+        name: `bodyTitle`,
+        node,
+        value: bodyTitle
+      });
+    }
+    
   }
-
+  
 };

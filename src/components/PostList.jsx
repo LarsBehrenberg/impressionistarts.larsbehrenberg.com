@@ -8,7 +8,7 @@ import theme from '../../config/theme';
 const Wrapper = styled.article`
   margin-bottom: 2rem;
   position: relative;
-  z-index: 100;
+  z-index: 10;
   border-radius: ${props => props.theme.borderRadius.default};
   box-shadow: ${props => props.theme.shadow.feature.small.default};
   transition: ${props => props.theme.transitions.boom.transition};

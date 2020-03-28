@@ -53,41 +53,6 @@ textSections:
       On his return, Manet duly failed his re-sits and was eventually allowed to
       enrol in a painting school run by the classical landscapist Thomas
       Couture.
-
-
-      ### Couture's studio
-
-
-      Manet spent six years at Couture’s, between 1850 and 1856. Over this
-      period he copied old masters and started to develop his unique technique.
-      He respected Couture, who encouraged his students to develop their own
-      style.
-
-       Did you know? On occasion Manet and Couture quarrelled. Once, Manet stormed out of Couture’s studio in protest about a critical remark and refused to return for a month!
-
-      After leaving Couture’s in 1856, aged 24, Manet opened his own studio and
-      after a few years produced his first major work: the Absinthe Drinker. It
-      is a grand painting depicting a poor Parisian drunkard. And it was Manet’s
-      first submission to the annual Salon (Exhibition) organised by the
-      influential Academy des Beaux Arts (Fine Arts Academy).
-
-
-      ### The Salon
-
-
-      In a time where there were few private exhibitions, the Salon was critical
-      to the success or failure of an aspiring artist. Acceptance by the jury
-      and positive reviews in the papers would lead to commissions and sales.
-      Rejection or negative commentary could stop a career in its tracks.
-
-
-      The 1859 jury did not take to The Absinthe Drinker, which received the
-      approval of only one the twelve jurors (that of the romantic painter
-      Eugène Delacroix). When Manet turned to Couture for comfort he got none.
-      Couture remarked that:
-
-
-      “the only drunk around here is you!"
     galleryImages:
       image1: /assets/berthe-morisot-eugene-manet.jpg
       image2: /assets/degas-cotton-exchange-new-orleans-lg.jpg
@@ -98,7 +63,3 @@ textSections:
 He was, unlike many of the other impressionists, born into a wealthy bourgeois family: his father a senior civil servant and later a judge; his mother the goddaughter of the Swedish crown prince.
 
 Manet’s roots were a blessing and a burden: he did not have to worry about money, being left a substantial inheritance on his father’s death in 1862, and so could paint his way without having to worry about sales. But his desire to please his father and justify his career choice after his father’s death meant that he never stopped trying to impress the conservative art establishment—with only limited success.
-
-Manet died when he was only 53. But his fascinating life saw him sail to Rio de Janeiro on a merchant ship, become a household name in France when he took on the conservative art establishment with a painting of a prostitute, defend Paris when the Prussians laid siege to it in 1870/1, and even fight a duel.
-
-These days Claude Monet is probably more famous than Manet. But the latter was seen as the father of Impressionism during his lifetime: he gave the other impressionists the confidence to take on the conservative art world. Indeed, Manet’s most controversial work—Olympia—was probably the first true work of modern art.

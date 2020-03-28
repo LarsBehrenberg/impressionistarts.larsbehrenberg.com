@@ -42,26 +42,6 @@ textSections:
 
       First, Degas was a hard-worker. By 1860, he has produced 700 copies of
       older works.
-
-
-      Secondly, and more importantly, Degas did not copy works unthinkingly. He
-      would, for example, focus on a small part of a masterpiece rather than
-      seek to reproduce the whole. And Degas committed his thinking on painting,
-      together with many of his innermost thoughts, to a meticulous diary.
-
-
-      ### Degas’ early works
-
-
-      Degas’ unique insight can be seen in three of his earliest works, The
-      Suffering of New Orleans, Spartan Girls Challenging Boys and The Bellelli
-      Family.
-
-
-      (1) The Suffering of New Orleans is ostensibly an historical painting in
-      classical style. But it seeks to depict a modern event, the capture of New
-      Orleans by Union Troops in 1862 (representing a major turning-point in the
-      American Civil War).
     galleryImages:
       image1: /assets/berthe-morisot-eugene-manet.jpg
       image2: /assets/degas-cotton-exchange-new-orleans-lg.jpg

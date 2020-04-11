@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-tutorial-starter",
-  "author": "Justin Formentin",
-  "title": "Gatsby V2 Tutorial Starter",
-  "description": "My Blog",
-  "homepage": "https://gatsby-tutorial-starter.netlify.com",
+  "name": "impressionistarts-prototype",
+  "author": "Lars Behrenberg",
+  "title": "ImpressionistArts Prototype",
+  "description": "A prototype for the ImpressionistArts.com website",
+  "homepage": "https://impressionistarts.larsbehrenberg.com",
   "license": "MIT",
   "version": "0.0.7",
   "repository": {

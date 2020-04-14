@@ -14,31 +14,28 @@ collections:
       - { name: "path", label: "Slug" }
       - { name: "date", label: "Published Date", widget: "datetime" }
       - { name: "title", label: "Title" }
-      - { name: "body", label: "Body", widget: "markdown" }
+      - { name: "body", label: "Introduction", widget: "markdown" }
       - { name: "tags", label: "Tags", widget: "list" }
       - { name: "cover", label: "Featured Image", widget: "image", required: true }
+      - label: "Upper Gallery"
+        name: "upperGalleryImages"
+        widget: "object"
+        fields:
+          - {label: Image 1, name: image1, widget: image, required: true}
+          - {label: Image 2, name: image2, widget: image, required: true}
+          - {label: Image 3, name: image3, widget: image, required: true}
+          - {label: Image 4, name: image4, widget: image, required: true}
       - label: "Text sections"
         name: "textSections"
         widget: "list"
         allow_add: true
         collapsed: false
         fields:
-          - {label: Text Title, name: textTitle, widget: string, default: "This is the text title!"}
-          - {label: Text, name: text, widget: markdown, default: "This is the body text!"}
-          - label: "Gallery"
-            name: "galleryImages"
-            widget: "object"
-            fields:
-              - {label: Image 1, name: image1, widget: image, required: true}
-              - {label: Image 2, name: image2, widget: image, required: true}
-              - {label: Image 3, name: image3, widget: image, required: true}
-  
-  - name: "maps"
-    label: "Maps"
-    folder: "/content/maps/"
-    create: true
-    fields:
-      - { name: "path", label: "Path" }
-      - { name: "title", label: "Title" }
-      - { name: "googleApi", label: "Google API URL"}
-      - { name: "tags", label: "Tags", widget: "list" }
+          - {label: Title, name: textTitle, widget: "string", default: "Title here", required: true}
+          - {label: Text, name: text, widget: markdown, default: "Body text here", required: true}
+          - label: "Side Gallery"
+            name: "sideGalleryImages"
+            widget: "list"
+            allow_add: true
+            collapsed: true
+            field: {label: Image, name: image, widget: image}

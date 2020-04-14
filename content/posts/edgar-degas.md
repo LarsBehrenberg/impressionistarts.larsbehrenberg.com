@@ -42,10 +42,6 @@ textSections:
 
       First, Degas was a hard-worker. By 1860, he has produced 700 copies of
       older works.
-    galleryImages:
-      image1: /assets/berthe-morisot-eugene-manet.jpg
-      image2: /assets/degas-cotton-exchange-new-orleans-lg.jpg
-      image3: /assets/manet-bar-at-folies-bergere.jpg
 ---
 **Edgar Degas was born in Paris in 1834, his father a wealthy banker and his mother an emigre from New Orleans.**
 

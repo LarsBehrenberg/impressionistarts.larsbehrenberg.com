@@ -6,11 +6,6 @@ tags:
   - Edouard Manet
   - Impressionist
 cover: /assets/manet-bar-at-folies-bergere.jpg
-authorList:
-  - quote: Everything is awesome!
-    author: Some author
-  - quote: Everything is even more awesome!
-    author: Another author
 textSections:
   - textTitle: Manet's early years
     text: >-
@@ -53,10 +48,6 @@ textSections:
       On his return, Manet duly failed his re-sits and was eventually allowed to
       enrol in a painting school run by the classical landscapist Thomas
       Couture.
-    galleryImages:
-      image1: /assets/berthe-morisot-eugene-manet.jpg
-      image2: /assets/degas-cotton-exchange-new-orleans-lg.jpg
-      image3: /assets/manet-bar-at-folies-bergere.jpg
 ---
 **Edouard Manet was born in 1832, the first child of Auguste and Eugenie.**
 

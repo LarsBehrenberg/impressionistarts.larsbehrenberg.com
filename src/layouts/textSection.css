@@ -68,15 +68,6 @@ svg:not(:root) {
   overflow: hidden
 }
 
-a {
-  color: #337ab7
-}
-
-a:hover,
-a:focus,
-a:visited {
-  color: #23527c
-}
 
 .i {
   display: inline-block

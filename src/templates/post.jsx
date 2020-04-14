@@ -37,12 +37,11 @@ const Post = ({ data, pageContext }) => {
       <Header title={title} date={date} cover={image} />
       <Container>
         {/* <Content input={html} /> */}
-      
-        {fields.bodyTitle.map((value, index) => {
+        {/* {fields.bodyTitle.map((value, index) => {
           // const totalText = fields.bodyTitle[index] + fields.bodyText[index];
           const {image1, image2, image3} = textSections[index].galleryImages
           return <TextSection title={fields.bodyTitle[index]} text={fields.bodyText[index]} image1={image1.childImageSharp.fluid.src} image2={image2.childImageSharp.fluid.src} image3={image3.childImageSharp.fluid.src}/>
-        })}
+        })} */}
         <TagsBlock list={tags || []} />
       </Container>
 
@@ -90,43 +89,6 @@ export const query = graphql`
         date(formatString: "MM.DD.YYYY")
         title
         tags
-        textSections {
-          galleryImages {
-            image3 {
-              childImageSharp {
-                fluid(
-                  maxWidth: 300
-                  quality: 90
-                  traceSVG: { color: "#2B2B2F" }
-                ) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
-                }
-              }
-            }
-            image2 {
-              childImageSharp {
-                fluid(
-                  maxWidth: 300
-                  quality: 90
-                  traceSVG: { color: "#2B2B2F" }
-                ) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
-                }
-              }
-            }
-            image1 {
-              childImageSharp {
-                fluid(
-                  maxWidth: 300
-                  quality: 90
-                  traceSVG: { color: "#2B2B2F" }
-                ) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
-                }
-              }
-            }
-          }
-        }
         cover {
           childImageSharp {
             fluid(

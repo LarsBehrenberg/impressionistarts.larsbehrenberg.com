@@ -70,7 +70,6 @@ const TextSection = ({ title, text, image1, image2, image3 }) => (
         <div className="row">
             <div className="col-sm-9">
             <section className="site-block">
-                
                 <h2><Wrapper dangerouslySetInnerHTML={{ __html: title }} /> </h2>
                 <div className="row">
                     <div className="col-sm-3">
@@ -87,22 +86,20 @@ const TextSection = ({ title, text, image1, image2, image3 }) => (
                             </div>
                             <div className="smallery-item-wrp ttdegalleryitem" data-pswp-uid="1">
                                 <figure className="smallery-item-psn"> <a className="smallery-item-uri" title="FILLINALT" data-size="FILLINSIZE" data-cat="1" data-pid="FILLINPICS" data-index="FILLINNUMBER">
-                                    <span className="ttde-gallery-open-btn"><span>More
-                                        images 20+</span></span> <img className="smallery-item-img loaded" data-src={image3} alt="FILLINALT" src={image3} data-was-processed="true" />
+                                    <img className="smallery-item-img loaded" data-src={image3} alt="FILLINALT" src={image3} data-was-processed="true" />
                                 </a> </figure>
                             </div>
                         </div>
                     </div>
                     <div className="col-sm-9">
-                        
                         <div class="site-text">
                         <div class="site-text-less" id="view-content-1">
                           <div id="view-content-height-1">
                             <Wrapper dangerouslySetInnerHTML={{ __html: text }} />
                           </div>
                         </div>
-                        <div class="site-text-more"> <a class="btn btn-outline" onclick="ttdeToggleVisibility(this, &#39;view-content-1&#39;, &#39;view-content-height-1&#39)">Expand
-                            to read more</a> </div>
+                        {/* <div class="site-text-more"> <a class="btn btn-outline" onclick="ttdeToggleVisibility(this, &#39;view-content-1&#39;, &#39;view-content-height-1&#39)">Expand
+                            to read more</a> </div> */}
                       </div>
                     </div>
                 </div>
